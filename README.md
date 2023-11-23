@@ -63,4 +63,7 @@ The explicit type annotations and conversions in the get_key_from_user function 
 Necessity: Rust's static typing system addressed challenges associated with type-related errors, providing early detection of potential issues and improving overall code reliability.
 <br>
 
-
+# Future Work
+- Consideration for a more user-friendly interface, potentially transitioning from a command-line application to a graphical user interface (GUI) could be done. This enhancement could involve designing a more intuitive and visually appealing way for users to interact with the encryption and decryption processes. <br>
+- Developing detailed tutorials and examples demonstrating guidelines to use the applicatioin, common encryption scenarios, key management best practices, and troubleshooting guides could help users take full advantage of our project. <br>
+- We could also explore the possibility of compiling the application to WebAssembly for running in web browsers, expanding accessibility. <br>
