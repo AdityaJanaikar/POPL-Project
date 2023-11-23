@@ -1,4 +1,6 @@
 #include <iostream>
+#include <fstream>
+#include <sstream>
 #include <string>
 #include <iomanip>
 
@@ -52,19 +54,61 @@ string decrypt(const string& enc, const string& key) {
     return original;
 }
 
-int main() {
-    string str;
-    cout << "Enter the original string: ";
-    getline(cin, str);
+string readFile(const string& filename) {
+    ifstream inFile(filename);
+    if (!inFile) {
+        cerr << "Error: Unable to open input file." << endl;
+        return "";
+    }
+
+    string content((istreambuf_iterator<char>(inFile)), istreambuf_iterator<char>());
+    inFile.close();
+
+    return content;
+}
+
+void writeFile(const string& filename, const string& content) {
+    ofstream outFile(filename);
+    if (!outFile) {
+        cerr << "Error: Unable to open " << filename << " for writing." << endl;
+        return;
+    }
+
+    outFile << content;
+    outFile.close();
+}
+
+int main(int argc, char* argv[]) {
+    if (argc != 2) {
+        cerr << "Usage: " << argv[0] << " <filename>" << endl;
+        return 1;
+    }
+
+    string filename = argv[1];
+
+    // Read the content of the file
+    string fileContent = readFile(filename);
+    if (fileContent.empty()) {
+        return 1;  // Error occurred during file reading
+    }
+
+    cout << "Read content from file: " << fileContent << endl;
 
     string key = getKeyFromUser();
 
-    string encrypted = encrypt(str, key);
-    cout << "Encrypted string (Hex): ";
-    displayInHex(encrypted);
+    // Encrypt the content
+    string encrypted = encrypt(fileContent, key);
 
+    // Write encrypted content to encrypt.txt
+    writeFile("encrypt.txt", encrypted);
+    cout << "Content encrypted and written to encrypt.txt." << endl;
+
+    // Decrypt the content
     string decrypted = decrypt(encrypted, key);
-    cout << "Decrypted string: " << decrypted << endl;
+
+    // Write decrypted content to decrypt.txt
+    writeFile("decrypt.txt", decrypted);
+    cout << "Content decrypted and written to decrypt.txt." << endl;
 
     return 0;
 }
