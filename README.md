@@ -1,5 +1,5 @@
 # Problem Statement
-Data security is a big issue in the current world. The problem at hand is to implement a simple encryption and decryption algorithm in both Rust and C++, and identify various advantages and disadvantages both languages have for our specific use case .
+Data security is a big issue in the current world. The problem at hand is to implement a simple encryption and decryption algorithm in both Rust and C++ and identify various advantages and disadvantages both languages have for our specific use case .
 <br>
 By using the principles of both the languages we aim to compare and contrast the performance advantage they can provide<br>
 The algorithm involves swapping adjacent characters in a string and then performing an XOR operation with a user-provided key.
