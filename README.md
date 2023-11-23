@@ -99,7 +99,11 @@ The outputs include:
 - We did compare the runtime of both the languages with a defined key value, the values are attached in the graph below:
  ![Screenshot 2023-11-23 214104](https://github.com/AdityaJanaikar/POPL-Project/assets/101914528/ba4cb009-23d2-422f-8691-d10ed0dfaaa9)
 
-  
+# How to compile
+- C++: g++ filename.c
+- Rust: rustc filename.rs
+- Give file name as command line input with the object name. 
+
 # Future Work
 - Consideration for a more user-friendly interface, potentially transitioning from a command-line application to a graphical user interface (GUI) could be done. This enhancement could involve designing a more intuitive and visually appealing way for users to interact with the encryption and decryption processes. <br>
 - Developing detailed tutorials and examples demonstrating guidelines to use the application, common encryption scenarios, key management best practices, and troubleshooting guides could help users take full advantage of our project. <br>
