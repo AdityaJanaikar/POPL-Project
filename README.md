@@ -11,7 +11,25 @@ The algorithm involves swapping adjacent characters in a string and then perform
 # Software Architecture
 
 ![Screenshot 2023-11-23 204258](https://github.com/AdityaJanaikar/POPL-Project/assets/101914528/93305226-fafb-46bc-b61d-c6970f2aec41)
-<br>
+<be>
+
+- The software architecture is a functional programming approach. 
+- It is a standalone architecture with no network involved
+- All the testing is done on local files as of now. 
+
+We developed all the parts of the code on our own. Both the C++ and the Rust code as it is a simplified and different encryption algorithms. The steps in the algorithm are as follows:
+
+## Encryption:
+1. It converts the file to a string
+2. Adjacent characters of the string are swapped 
+3.   The swapped string is then xored with a key input by the user repeatedly till the staring is exhausted.
+4. The encrypted string is converted to hex values for storing and then stored in a text file
+
+## Decryption:
+1. The encrypted string is xored with the key again, the idea is a^a =0.
+2. The adjacent strings are swapped back and we obtain our original string. 
+3. The original string is stored back in a file
+
 
 # POPL aspects
 1) Ownership and Borrowing: <br>
