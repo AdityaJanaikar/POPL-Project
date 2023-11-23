@@ -96,7 +96,7 @@ The outputs include:
 ## Performance Analysis
 - We tried to analyze timing differences for various types of text files, but it gave inconsistent results.
 - We later understood it to be variable due to the variable time required for inputting the key
-- We did compare the runtime of both the languages with a defined key value, the values are attached in the graph below:
+- We compared the runtime of both languages with a defined key value. To calculate the times, we used the Instance of the time library in Rust and the Chrono library in C++. The values are attached in the graph below:
  ![Screenshot 2023-11-23 214104](https://github.com/AdityaJanaikar/POPL-Project/assets/101914528/ba4cb009-23d2-422f-8691-d10ed0dfaaa9)
 
 # How to compile
