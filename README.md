@@ -79,8 +79,25 @@ The explicit type annotations and conversions in the get_key_from_user function 
 ![Screenshot 2023-11-23 201427](https://github.com/AdityaJanaikar/POPL-Project/assets/101914528/f38e7693-fbd8-40c1-95dc-ff72c2aa5470)
 <br> <br>
 Necessity: Rust's static typing system addressed challenges associated with type-related errors, providing early detection of potential issues and improving overall code reliability.
-<br>
+<be>
 
+# Results
+
+One of the test case files is attached in the tests folder. And the outputs generated from that file are attached in the results folder.
+The outputs include:
+1. Encrypted file from C++ algorithm
+2. Decrypted file from C++ algorithm 
+3. Encrypted file from Rust algorithm
+4. Decrypted file from Rust algorithm
+
+
+- The files 1 and 3 are the exact same and files 2,4 and the original test file are the exact same.
+
+## Performance Analysis
+- We tried to analyze timing differences for various types of text files, but it gave inconsistent results.
+- We later understood it to be variable due to the variable time required for inputting the key
+-    
+  
 # Future Work
 - Consideration for a more user-friendly interface, potentially transitioning from a command-line application to a graphical user interface (GUI) could be done. This enhancement could involve designing a more intuitive and visually appealing way for users to interact with the encryption and decryption processes. <br>
 - Developing detailed tutorials and examples demonstrating guidelines to use the application, common encryption scenarios, key management best practices, and troubleshooting guides could help users take full advantage of our project. <br>
