@@ -24,7 +24,7 @@ Rust's pattern matching and destructuring capabilities are employed in the xor_w
 
 ![Screenshot 2023-11-23 195025](https://github.com/AdityaJanaikar/POPL-Project/assets/101914528/224dfdbf-6125-4445-b23f-7c3eaab27823)
 <br>
-Necessity: Rust's pattern matching and destructuring capabilities simplified code readability and reduced the risk of errors during complex operations, solving challenges related to data processing logic.
+Necessity: Rust's pattern matching and destructuring abilities simplified code readability and reduced the risk of errors during complex operations, solving challenges related to data processing logic.
 <br>
 4) Error Handling: <br> 
 The expect method is used for error handling when reading user input, demonstrating Rust's approach to explicit error handling.
