@@ -10,6 +10,8 @@ The algorithm involves swapping adjacent characters in a string and then perform
 
 # Software Architecture
 
+![Screenshot 2023-11-23 204258](https://github.com/AdityaJanaikar/POPL-Project/assets/101914528/93305226-fafb-46bc-b61d-c6970f2aec41)
+<br>
 
 # POPL aspects
 1) Ownership and Borrowing: <br>
